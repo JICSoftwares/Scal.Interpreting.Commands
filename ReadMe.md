@@ -83,9 +83,10 @@ public abstract class Program
 ```
 
 Mention that:
-- the **Program** itself is an abstract with just an entrypoint and the **ExecuteAsync** contract
-- commands are classes deriving from **Program** containg the methods you desire (ExecuteAsync in the example)
-- it is derived in a **ListImage** class that is instantiated
+- The **Program** itself is an abstract with just an entrypoint and the **ExecuteAsync** contract
+- Commands are classes deriving from **Program** containg the methods you desire (ExecuteAsync in the example)
+- It is derived in a **ListImage** class that is instantiated
+- Help is generated using text from **DesriptionAttribute**
 - I choose to output the feedback without help in case of success which shows the program title
 
 Executing:
