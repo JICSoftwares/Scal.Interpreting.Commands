@@ -23,7 +23,7 @@ Unlike reflection-heavy or attribute-mandatory CLI frameworks, **Scal.Interpreti
 - Contextual help generation
 - Dependency-free
 - DI-agnostic construction
-- DotNet 8.0 LTS compatible (console or AspNet)
+- DotNet 8.0 and 10.0 LTS compatible (console or AspNet)
 - Lightweight (425 lines in total including comments, 4 classes and 2 extensions)
 
 ## Dependencies

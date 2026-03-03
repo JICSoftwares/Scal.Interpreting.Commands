@@ -2,12 +2,12 @@
 
   <PropertyGroup                    Label="Project Settings, targetting net8.0 because LTS">
     <OutputType                     >Library</OutputType>
-    <TargetFramework                >net8.0</TargetFramework>
+    <TargetFrameworks               >net8.0;net10.0</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup                    Label="Project Metadata">
-    <Description                    >A lightweight, deterministic command-line interpreter for .NET 8 with attribute-based validation and type conversion.</Description>
-    <PackageTags                    >command-line cli interpreter parser strongly-typed validation dotnet net8</PackageTags>
+    <Description                    >A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation and type conversion.</Description>
+    <PackageTags                    >command-line cli interpreter parser strongly-typed validation dotnet net8 net10</PackageTags>
     <ProjectCreation                >2026</ProjectCreation>
     <PackageLicenseExpression       >BSD-3-Clause</PackageLicenseExpression>
     <ApplicationIcon                >Package.ico</ApplicationIcon>
