@@ -3,7 +3,8 @@
   <Target Name="SetPackageReleaseNotes" BeforeTargets="GenerateNuspec"
           Condition="'$(PackageReleaseNotesFile)' != ''">
     <PropertyGroup>
-      <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\..\..\$(PackageReleaseNotesFile)"))</PackageReleaseNotes>
+      <!-- <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\..\..\$(PackageReleaseNotesFile)"))</PackageReleaseNotes> -->
+      <PackageReleaseNotes>See [ChangeLog](https://raw.githubusercontent.com/Scal-Human/Scal.Interpreting.Commands/refs/heads/main/ChangeLog.md)</PackageReleaseNotes>
     </PropertyGroup>
   </Target>
 
