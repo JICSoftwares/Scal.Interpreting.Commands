@@ -36,7 +36,7 @@
     <Content  Pack="true"           Include="..\..\$(PackageReadmeFile)"      PackagePath="\" />
     <Content  Pack="true"           Include="..\..\Citation.cff"              PackagePath="\" />
     <Content  Pack="true"           Include="..\..\License.txt"               PackagePath="\" />
-    <Content  Pack="true"           Include="$(PackageReleaseNotesFile)"      PackagePath="\" />
+    <Content  Pack="true"           Include="..\..\$(PackageReleaseNotesFile)" PackagePath="\" />
     <Content  Pack="true"           Include="$(PackageIcon)"                  PackagePath="\" />
     <Content  Pack="true"           Include="..\..\Documentation\**"          PackagePath="\Documentation\" Exclude="**\*.puml" />
     <Content  Pack="true"           Include="..\..\Resource\**"               PackagePath="\Resource\"      Exclude="**\*.puml" />
