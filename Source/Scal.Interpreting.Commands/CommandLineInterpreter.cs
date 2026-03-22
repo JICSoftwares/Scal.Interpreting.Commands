@@ -48,6 +48,7 @@ public class CommandLineInterpreter(
         var knownCommandTypes       = interpretation.CommandTypes;
         interpretation.CommandTypes = interpretation.CommandTypes
             .Where(commandType => commandType.IsMatchingCommand(verb!, noun ?? string.Empty))
+            .OrderBy(commandType => $"{commandType.Verb}.{commandType.Noun}")
             .ToArray();
         if (interpretation.CommandTypes.Length > 0) {
             var commandTypes = interpretation.CommandTypes
