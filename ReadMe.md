@@ -235,6 +235,39 @@ or by specifying a **Namespace** in a **DataContract** without **Name**:
     }
 ```
 
+### Example of verb-only and verb/noun with the same verb
+
+It is accepted as long as there is a way to differentiate both commands, either the verb alone or the presence of a parameter.
+
+```c#
+internal class Do : Program
+{
+    public string? What { get; set; }
+
+    public override Task<int> ExecuteAsync()
+    {
+        Console.WriteLine("{0}: '{1}'", this.GetType().Name, this.What);
+        return Task.FromResult(0);
+    }
+}
+
+internal class DoMore : Program
+{
+    public string? What { get; set; }
+
+    public override Task<int> ExecuteAsync()
+    {
+        Console.WriteLine("{0}: '{1}'", this.GetType().Name, this.What);
+        return Task.FromResult(0);
+    }
+}
+
+```
+
+Mention that:
+- **Do What=Something** and **Do More What=Something** will both work, instantiating the correct command.
+- **Do** works too as no parameter is required.
+
 ### Example with type converter and custom validation
 
 Custom type converter and custom validation may be used:

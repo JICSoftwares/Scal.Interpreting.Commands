@@ -1,5 +1,17 @@
 # Change Log
 
+<a name="1.0.3"></a>
+## [1.0.3](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.3) (2026-03-22)
+
+### Bug Fixes
+
+* Fixes issue [#1](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/issues/1) verb-only with parameters + tests + ReadMe example ([6ec21b1](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/6ec21b10014de992d336287906b0d40bbfda080a))
+
+### Documentation
+
+* Add Why page. ([2cbea2a](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/2cbea2ab3e073f02493787f398e854fe4b5fac4d))
+* **NuGet:** Non-raw ChangeLog link ([a47e8f4](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/a47e8f4f3ec291b39c4a86600ba4134503db3a74))
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.2) (2026-03-22)
 

@@ -52,7 +52,7 @@ public record CommandType(
             var contract    = attributes.OfType<DataContractAttribute>().FirstOrDefault();
             var nameParts   = type.Name.SplitCamelCase().ToArray();
             var verb        = contract?.Namespace ?? nameParts[0];
-            var noun        = contract?.Name ?? (nameParts.Length > 1 ? nameParts[1] : string.Empty);
+            var noun        = (contract is null) ? (nameParts.Length > 1 ? nameParts[1] : string.Empty) : contract?.Name ?? string.Empty;
             commandTypes.Add(new CommandType(type, verb, noun,
                 attributes.OfType<DescriptionAttribute>().FirstOrDefault()?.Description,
                 TypeDescriptor.GetProperties(type)
@@ -84,6 +84,13 @@ public record CommandType(
     }
 
     #endregion
+    #region Properties
+
+    /// Determine if this command has a noun or is verb-only.
+    /// Returns true if command has a noun or false if it is a verb-only command.
+    public bool IsVerbOnly => string.IsNullOrWhiteSpace(this.Noun);
+
+    #endregion
     #region Methods
 
     /// Get the array of parameters matching the given name which is possibly an abbreviation.
@@ -110,7 +117,13 @@ public record CommandType(
     {
         return (
             this.Verb.StartsWith(verb, StringComparison.OrdinalIgnoreCase) &&
-            this.Noun.StartsWith(noun, StringComparison.OrdinalIgnoreCase)
+            (
+                this.IsVerbOnly ||
+                (
+                    ! string.IsNullOrWhiteSpace(noun) &&
+                    this.Noun.StartsWith(noun, StringComparison.OrdinalIgnoreCase)
+                )
+            )
         );
     }
 

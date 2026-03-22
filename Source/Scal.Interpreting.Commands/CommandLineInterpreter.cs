@@ -34,8 +34,15 @@ public class CommandLineInterpreter(
         var verb            = (args.Length >= 1) ? args[0] : null;
         var noun            = (args.Length >= 2) ? args[1] : null;
         var interpretation  = new CommandInterpretation<TCommand>(args);
+        Dictionary<string, string> pairParameters   = [];
+        Dictionary<string, string> verbParameters   = [];
         try {
-            interpretation.Parameters = this.GetParametersDictionary(args);
+            pairParameters  = this.GetParametersDictionary(args.Skip(2));
+            try {
+                verbParameters  = this.GetParametersDictionary(args.Skip(1));
+            } catch (ArgumentException ) { // May occur when an abbreviated parameter is the same as the noun.
+                verbParameters  = pairParameters;
+            }
         } catch (Exception exception) {
             interpretation.Results.Add(new ValidationResult(exception.Message));
         }
@@ -52,11 +59,15 @@ public class CommandLineInterpreter(
             .ToArray();
         if (interpretation.CommandTypes.Length > 0) {
             var commandTypes = interpretation.CommandTypes
-                .Where(commandType => commandType.IsMatchingParameters(interpretation.Parameters.Keys, interpretation.Results))
+                .Where(commandType => commandType.IsMatchingParameters(
+                    commandType.IsVerbOnly ? verbParameters.Keys : pairParameters.Keys,
+                    interpretation.Results
+                ))
                 .ToArray();
             // Preserve list of command to show help when ambiguous parameters found
             if (commandTypes.Length == 1) {
                 interpretation.CommandTypes = commandTypes;
+                interpretation.Parameters =  interpretation.CommandTypes[0].IsVerbOnly ? verbParameters : pairParameters;
             }
         }
         switch (interpretation.CommandTypes.Length) {
@@ -80,11 +91,11 @@ public class CommandLineInterpreter(
     }
 
     /// Get the dictionary of name/value pairs parameters.
-    /// <param name="args">The array of command-line arguments.</param>
+    /// <param name="args">The command-line arguments.</param>
     /// <returns>Return the builded parameters dictionary.</returns>
-    private Dictionary<string, string> GetParametersDictionary(string[] args)
+    private Dictionary<string, string> GetParametersDictionary(IEnumerable<string> args)
     {
-        return args.Skip(2)
+        return args
             .Where(arg => ! string.IsNullOrWhiteSpace(arg))
             .Select(arg => {
                 var parts = arg.Split([ '=' ], 2, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
