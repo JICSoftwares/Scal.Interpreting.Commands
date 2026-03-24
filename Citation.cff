@@ -1,6 +1,6 @@
 cff-version:  1.2.0
 title:        Scal.Interpreting.Commands
-abstract:     A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation and type conversion.
+abstract:     A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation, type conversion and response file.
 message:      If you use this, please cite the software and the references
 authors:
 - name:         Scal-Human
