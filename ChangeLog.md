@@ -11,13 +11,6 @@
 
 * Codex remarks ([8770357](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/8770357086fec1873bb3832558aac516a755b31b))
 
-<a name="1.0.4"></a>
-## [1.0.4](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.4) (2026-03-24)
-
-### Features
-
-* Add support of response files (.rsp) possibly nested, add tests and doc
-
 <a name="1.0.3"></a>
 ## [1.0.3](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.3) (2026-03-22)
 
