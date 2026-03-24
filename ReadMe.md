@@ -1,6 +1,6 @@
 # Scal.Interpreting.Commands
 
-A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation and type conversion.
+A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation, type conversion and response file.
 
 ## Purpose
 
@@ -37,11 +37,12 @@ See [Why Scal.Interpreting.Commands exists](Documentation/Why.md) for more infor
 - Strongly-typed command instantiation
 - Validation via DataAnnotations
 - TypeConverter support
+- Response file (with the @ prefix, see example below)
 - Contextual help generation
 - Dependency-free
 - DI-agnostic construction
 - DotNet 8.0 and 10.0 LTS compatible (console or AspNet)
-- Lightweight (total 425 lines including comments, 4 classes and 2 extensions)
+- Lightweight (total 464 lines including comments, 4 classes and 2 extensions)
 
 ## Usage
 
@@ -288,6 +289,39 @@ Custom type converter and custom validation may be used:
     }
 ```
 
+### Example with response file
+
+You may use a response file, typically with extension .rsp, containing the paramaters either on one line or multiple lines.
+
+```cli
+CliArgs.exe @MyParameters.rsp
+or
+CliArgs.exe @"/path with spaces/MyParameters.rsp"
+```
+
+with MyParameters.rsp containing:
+
+```
+List Image Name=abc TypeId=1
+```
+
+You may mix actual parameters with response file:
+
+```cli
+CliArgs.exe List Image @ListImageFilter.rsp
+```
+
+You may give a default path for response files if the path is not rooted:
+
+```c#
+var interpreter = new CommandLineInterpreter(responseFilePath: @"/the path you want");
+```
+
+Mention that:
+- Response files may contain other response files up to a depth of 9.
+- If **responseFilePath** is not specified, the path to the first response file read is used for subsequent ones.
+- The parameters are used in the order they appear, the first two being verb and noun.
+
 ### Example of factory constructor
 
 You may provide a factory delegate to integrate with your preferred DI framework:
@@ -305,7 +339,7 @@ If no factory delegate is provided, Activator is used:
 
 ### Test examples
 
-To view examples, see the [tests models](https://github.com/Scal-Human/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation and with type converter.
+To view examples, see the [tests models](https://github.com/Scal-Human/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation, verb-only with type converter and with response file.
 
 ## Integration
 

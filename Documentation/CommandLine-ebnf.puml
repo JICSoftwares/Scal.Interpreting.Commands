@@ -1,14 +1,25 @@
 @startebnf
 !theme blueprint
 SkinParam BackgroundColor #222
-Arguments = verb, [ " ", noun ] ,
-    {
-        " ", { "-" (* As many\n dashes\n as you want *) },
-            (
-                name, [ "=",
-                    ( value | ( '"', value, '"') )
-                ]
-                (* Optional for switch (boolean true) *)
-            )
-    };
+Arguments =
+    (
+        verb, [ " ", noun ] ,
+        {
+            " ", { "-" (* As many\n dashes\n as you want *) },
+                (
+                    name, [ "=",
+                        ( value | ( '"', value, '"') )
+                    ]
+                    (* Optional for switch (boolean true) *)
+                )
+        }
+    ) |
+    (
+        "@",
+        (
+            ( '"', response_file, '"' ) |
+            response_file
+            (* Typically a .rsp file\n May appear after other parameters *)
+        )
+    );
 @end
