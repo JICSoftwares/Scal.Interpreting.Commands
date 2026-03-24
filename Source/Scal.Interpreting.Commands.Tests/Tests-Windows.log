@@ -1,4 +1,4 @@
-Build started 2026-03-24 08:12:26.
+Build started 2026-03-24 09:18:18.
      1>Project "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\Scal.Interpreting.Commands.Tests.csproj" on node 1 (Restore target(s)).
      1>_GetAllRestoreProjectPathItems:
          Determining projects to restore...
@@ -21,8 +21,8 @@ Build started 2026-03-24 08:12:26.
          X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
          Assets file has not changed. Skipping assets file writing. Path: C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\project.assets.json
          Assets file has not changed. Skipping assets file writing. Path: C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\project.assets.json
-         Restored C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\Scal.Interpreting.Commands.csproj (in 25 ms).
-         Restored C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\Scal.Interpreting.Commands.Tests.csproj (in 25 ms).
+         Restored C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\Scal.Interpreting.Commands.Tests.csproj (in 27 ms).
+         Restored C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\Scal.Interpreting.Commands.csproj (in 27 ms).
          
          NuGet Config files used:
              C:\Users\Scal\AppData\Roaming\NuGet\NuGet.Config
@@ -83,6 +83,7 @@ Build started 2026-03-24 08:12:26.
          CompilerServer: server - server processed compilation - Scal.Interpreting.Commands (net8.0)
        CopyFilesToOutputDirectory:
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net8.0\Scal.Interpreting.Commands.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.dll".
+         Copying reference assembly from "obj\Debug\net8.0\refint\Scal.Interpreting.Commands.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net8.0\ref\Scal.Interpreting.Commands.dll".
          Scal.Interpreting.Commands -> C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.dll
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net8.0\Scal.Interpreting.Commands.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.pdb".
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net8.0\Scal.Interpreting.Commands.xml" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.xml".
@@ -110,6 +111,7 @@ Build started 2026-03-24 08:12:26.
          CompilerServer: server - server processed compilation - Scal.Interpreting.Commands (net10.0)
        CopyFilesToOutputDirectory:
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net10.0\Scal.Interpreting.Commands.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.dll".
+         Copying reference assembly from "obj\Debug\net10.0\refint\Scal.Interpreting.Commands.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net10.0\ref\Scal.Interpreting.Commands.dll".
          Scal.Interpreting.Commands -> C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.dll
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net10.0\Scal.Interpreting.Commands.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.pdb".
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\obj\Debug\net10.0\Scal.Interpreting.Commands.xml" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.xml".
@@ -122,11 +124,15 @@ Build started 2026-03-24 08:12:26.
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net8.0\Scal.Interpreting.Commands.pdb".
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net8.0\Scal.Interpreting.Commands.xml" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net8.0\Scal.Interpreting.Commands.xml".
          Touching "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\Debug\net8.0\Scal.Int.522ECF28.Up2Date".
-       _CopyOutOfDateSourceItemsToOutputDirectory:
-       Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
      1>GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
-     1>CopyFilesToOutputDirectory:
+     1>_CopyOutOfDateSourceItemsToOutputDirectory:
+       Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildRuntimeConfigurationFiles:
+       Skipping target "GenerateBuildRuntimeConfigurationFiles" because all output files are up-to-date with respect to the input files.
+       CopyFilesToOutputDirectory:
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\Debug\net8.0\Scal.Interpreting.Commands.Tests.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net8.0\Scal.Interpreting.Commands.Tests.dll".
          Scal.Interpreting.Commands.Tests -> C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net8.0\Scal.Interpreting.Commands.Tests.dll
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\Debug\net8.0\Scal.Interpreting.Commands.Tests.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net8.0\Scal.Interpreting.Commands.Tests.pdb".
@@ -150,12 +156,16 @@ Build started 2026-03-24 08:12:26.
          End reading response for Scal.Interpreting.Commands.Tests (net10.0)
          CompilerServer: server - server processed compilation - Scal.Interpreting.Commands.Tests (net10.0)
        _CopyFilesMarkedCopyLocal:
-         Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.pdb".
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.xml" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.xml".
+         Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.pdb" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.pdb".
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands\bin\Debug\net10.0\Scal.Interpreting.Commands.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.dll".
          Touching "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\Debug\net10.0\Scal.Int.522ECF28.Up2Date".
        _CopyOutOfDateSourceItemsToOutputDirectory:
        Skipping target "_CopyOutOfDateSourceItemsToOutputDirectory" because all output files are up-to-date with respect to the input files.
+       GenerateBuildDependencyFile:
+       Skipping target "GenerateBuildDependencyFile" because all output files are up-to-date with respect to the input files.
+       GenerateBuildRuntimeConfigurationFiles:
+       Skipping target "GenerateBuildRuntimeConfigurationFiles" because all output files are up-to-date with respect to the input files.
        CopyFilesToOutputDirectory:
          Copying file from "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\obj\Debug\net10.0\Scal.Interpreting.Commands.Tests.dll" to "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.Tests.dll".
          Scal.Interpreting.Commands.Tests -> C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\bin\Debug\net10.0\Scal.Interpreting.Commands.Tests.dll
@@ -178,104 +188,104 @@ A total of 1 test files matched the specified pattern.
 [xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 8.0.18)
 [xUnit.net 00:00:00.08]   Discovering: Scal.Interpreting.Commands.Tests
 [xUnit.net 00:00:00.08]   Discovering: Scal.Interpreting.Commands.Tests
-[xUnit.net 00:00:00.14]   Discovered:  Scal.Interpreting.Commands.Tests
-[xUnit.net 00:00:00.14]   Discovered:  Scal.Interpreting.Commands.Tests
-[xUnit.net 00:00:00.16]   Starting:    Scal.Interpreting.Commands.Tests
+[xUnit.net 00:00:00.12]   Discovered:  Scal.Interpreting.Commands.Tests
+[xUnit.net 00:00:00.15]   Starting:    Scal.Interpreting.Commands.Tests
+[xUnit.net 00:00:00.15]   Discovered:  Scal.Interpreting.Commands.Tests
 [xUnit.net 00:00:00.17]   Starting:    Scal.Interpreting.Commands.Tests
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [23 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [23 ms]
-  Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldInterpretVerbOnlyWithParameter [24 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [23 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [23 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ref field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [27 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [27 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [27 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [27 ms]
+  Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldInterpretVerbOnlyWithParameter [27 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ref field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldDistinguishVerbNounFromVerbOnly [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [1 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Reference not well formed, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Reference not well formed, ExpectedType = , Args = System.String[] }) [1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByType, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByType, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByType, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
 [xUnit.net 00:00:00.28]   Finished:    Scal.Interpreting.Commands.Tests
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [24 ms]
   Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldInterpretVerbOnlyWithParameter [24 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [24 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [24 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [24 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [25 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [23 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [24 ms]
   Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ref field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldDistinguishVerbNounFromVerbOnly [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithTypeConverter.AddReference, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = TypeId must be between 1 and 9, ExpectedType = , Name = , TypeId = 0, Args = System.String[] }) [1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithTypeConverter.Tests.ShouldInterpretOrReject(testData: TestData { Error = Reference not well formed, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.VerbOnly.Tests.ShouldDistinguishVerbNounFromVerbOnly [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [3 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Name field is required, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByType, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByType, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByType, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = TypeId must be between 1 and 9, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImageByNamespace, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImageByNamespace, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
-[xUnit.net 00:00:00.29]   Finished:    Scal.Interpreting.Commands.Tests
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = abbreviation is ambiguous, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdCleanup, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.Cleanup, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [3 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [5 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
+[xUnit.net 00:00:00.31]   Finished:    Scal.Interpreting.Commands.Tests
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdCleanup, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.Cleanup, Args = System.String[] }) [< 1 ms]
+  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [5 ms]
   Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
   Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
 
 Test Run Successful.
 Total tests: 39
      Passed: 39
- Total time: 0.7349 Seconds
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.ListImport, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdListImport, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = Ambiguous command, ExpectedType = , Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [3 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByConvention.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByConvention.Cleanup, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.ByAnnotation.Tests.ShouldInterpretOrReject(testData: TestData { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.ByAnnotation.CmdCleanup, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
-  Passed Scal.Interpreting.Commands.Tests.WithResponseFile.Tests.ShouldInterpretOrReject(testData: TestDataWithName { Error = , ExpectedType = Scal.Interpreting.Commands.Tests.WithResponseFile.ListImageByType, Name = a b c, TypeId = 1, Args = System.String[] }) [< 1 ms]
+ Total time: 0.7747 Seconds
 
 Test Run Successful.
 Total tests: 39
      Passed: 39
- Total time: 0.7587 Seconds
+ Total time: 0.8031 Seconds
      1>Done Building Project "C:\Scal26\Scal.Interpreting.Commands\Source\Scal.Interpreting.Commands.Tests\Scal.Interpreting.Commands.Tests.csproj" (VSTest target(s)).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.97
+Time Elapsed 00:00:02.98

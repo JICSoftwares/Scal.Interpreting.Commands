@@ -8,14 +8,13 @@ using System.Runtime.Serialization;
 namespace Scal.Interpreting.Commands;
 
 /// Command interpretation result class.
-/// <param name="args">The array of arguments as received from the program's Main entrypoint.</param>
 /// <typeparam name="TCommand">The base type the commands are derived from.</typeparam>
-public class CommandInterpretation<TCommand>(string[] args)
+public class CommandInterpretation<TCommand>()
     where TCommand : class
 {
 
     /// The array of arguments as received from the program's Main entrypoint.
-    public string[] Args { get; } = args;
+    public string[] Args { get; internal set; } = [];
 
     /// The instantiated command after interpretation, if possible, otherwise null.
     public TCommand? Command { get; set; }

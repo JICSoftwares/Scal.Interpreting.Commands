@@ -52,22 +52,21 @@ public partial class CommandLineInterpreter(
     public CommandInterpretation<TCommand> Interpret<TCommand>(string[] args)
         where TCommand: class
     {
-        string[] allArgs    = [];
-        var interpretation  = new CommandInterpretation<TCommand>(allArgs);
-        Dictionary<string, string> pairParameters   = [];
-        Dictionary<string, string> verbParameters   = [];
+        var interpretation  = new CommandInterpretation<TCommand>();
         try {
-            allArgs         = this.GetRawParameters(args).ToArray();
+            interpretation.Args = this.GetRawParameters(args).ToArray();
         } catch (Exception exception) {
             interpretation.Results.Add(new ValidationResult(exception.Message));
             return interpretation;
         }
-        var verb            = (allArgs.Length >= 1) ? allArgs[0] : null;
-        var noun            = (allArgs.Length >= 2) ? allArgs[1] : null;
+        var verb            = (interpretation.Args.Length >= 1) ? interpretation.Args[0] : null;
+        var noun            = (interpretation.Args.Length >= 2) ? interpretation.Args[1] : null;
+        Dictionary<string, string> pairParameters   = [];
+        Dictionary<string, string> verbParameters   = [];
         try {
-            pairParameters  = this.GetParametersDictionary(allArgs.Skip(2));
+            pairParameters  = this.GetParametersDictionary(interpretation.Args.Skip(2));
             try {
-                verbParameters  = this.GetParametersDictionary(allArgs.Skip(1));
+                verbParameters  = this.GetParametersDictionary(interpretation.Args.Skip(1));
             } catch (ArgumentException ) { // May occur when an abbreviated parameter is the same as the noun.
                 verbParameters  = pairParameters;
             }
@@ -106,7 +105,7 @@ public partial class CommandLineInterpreter(
                 break;
             case 0:
                 if (! interpretation.Results.Any()) {
-                    var commandDisplay = $"\"{string.Join("\" \"", allArgs)}\"";
+                    var commandDisplay = $"\"{string.Join("\" \"", interpretation.Args)}\"";
                     interpretation.Results.Add(new ValidationResult($"Unknown command: {commandDisplay}"));
                     interpretation.CommandTypes = knownCommandTypes;
                 }
@@ -147,7 +146,7 @@ public partial class CommandLineInterpreter(
         foreach (var argSource in args.Where(arg => ! string.IsNullOrWhiteSpace(arg))) {
             var arg = argSource.Trim(this.Delimiters);
             if (arg.StartsWith(ResponseFileMarker)) {
-                foreach (var readArg in this.ReadResponseFile(arg.Substring(1), depth + 1)) {
+                foreach (var readArg in this.ReadResponseFile(arg.Substring(1).TrimStart(this.Delimiters), depth + 1)) {
                     yield return readArg;
                 }
             } else {
