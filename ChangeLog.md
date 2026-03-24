@@ -1,5 +1,8 @@
 # Change Log
 
+<a name="1.0.4"></a>
+## [1.0.4](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.4) (2026-03-24)
+
 <a name="1.0.3"></a>
 ## [1.0.3](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.3) (2026-03-22)
 
