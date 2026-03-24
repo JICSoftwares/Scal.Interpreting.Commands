@@ -1,5 +1,16 @@
 # Change Log
 
+<a name="1.1.0"></a>
+## [1.1.0](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.1.0) (2026-03-24)
+
+### Features
+
+* Add support of response files (.rsp) possibly nested, add tests and doc ([f8da7a9](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/f8da7a9af7b52055a10dc0f1f944da18c4062fba))
+
+### Bug Fixes
+
+* Codex remarks ([8770357](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/commit/8770357086fec1873bb3832558aac516a755b31b))
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.0.4) (2026-03-24)
 
