@@ -339,7 +339,7 @@ If no factory delegate is provided, Activator is used:
 
 ### Test examples
 
-To view examples, see the [tests models](https://github.com/Scal-Human/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation, verb-only with type converter and with response file.
+To view examples, see the [tests models](https://github.com/Scal-Human/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation, verb-only, with type converter and with response file.
 
 ## Integration
 
@@ -359,7 +359,7 @@ None.
 
 ## Extensibility
 
-You man add as many commands as you want as long as there is no ambiguity on how to call them, i.e. at least one different parameter.
+You may add as many commands as you want as long as there is no ambiguity on how to call them, i.e. at least one different parameter.
 
 ## Notes
 
