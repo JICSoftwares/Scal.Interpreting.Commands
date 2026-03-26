@@ -9,20 +9,20 @@ public class Tests(ITestOutputHelper output)
     private ITestOutputHelper _output = output;
 
     public static IEnumerable<object[]> GetTestData() => [
-        [new TestData("Name field is required",             null,   "List", "Image",    "Type=1")],
-        [new TestData("Name field is required",             null,   "List", "Image",    "Type=1",   "N" )],
-        [new TestData("Name field is required",             null,   "List", "Image",    "Type=A",   "N" )],
-        [new TestData(null, typeof(CmdListImageByType),             "List", "Image",    "Type=1",   "Name=abc")],
-        [new TestData(null, typeof(CmdListImageByType),             "L",    "Ima",      "T=1",      "N=abc" )],
-        [new TestData("TypeId must be between 1 and 9",     null,   "List", "Image",    "Type=0",   "N=abc" )],
-        [new TestData(null, typeof(CmdListImageByNamespace),        "List", "Image",    "--Namespace=abc")],
-        [new TestData(null, typeof(CmdListImageByNamespace),        "List", "Ima",      "--Names=abc")],
-        [new TestData("Ambiguous command",                  null,   "List", "Ima",      "Name=abc")],
-        [new TestData("abbreviation is ambiguous",          null,   "List", "Ima",      "N=abc")],
-        [new TestData(null, typeof(CmdListImport),                  "List", "Import")],
-        [new TestData(null, typeof(CmdListImport),                  "List", "Imp")],
-        [new TestData("Ambiguous command",                  null,   "L", "I")],
-        [new TestData(null, typeof(CmdCleanup),                     "Cleanup")],
+        [new TestData(  1, "Name field is required",             null,   "List", "Image",    "Type=1")],
+        [new TestData(  2, "Name field is required",             null,   "List", "Image",    "Type=1",   "N" )],
+        [new TestData(  3, "Name field is required",             null,   "List", "Image",    "Type=A",   "N" )],
+        [new TestData(  4, null, typeof(CmdListImageByType),             "List", "Image",    "Type=1",   "Name=abc")],
+        [new TestData(  5, null, typeof(CmdListImageByType),             "L",    "Ima",      "T=1",      "N=abc" )],
+        [new TestData(  6, "TypeId must be between 1 and 9",     null,   "List", "Image",    "Type=0",   "N=abc" )],
+        [new TestData(  7, null, typeof(CmdListImageByNamespace),        "List", "Image",    "--Namespace=abc")],
+        [new TestData(  8, null, typeof(CmdListImageByNamespace),        "List", "Ima",      "--Names=abc")],
+        [new TestData(  9, "Ambiguous command",                  null,   "List", "Ima",      "Name=abc")],
+        [new TestData( 10, "abbreviation is ambiguous",          null,   "List", "Ima",      "N=abc")],
+        [new TestData( 11, null, typeof(CmdListImport),                  "List", "Import")],
+        [new TestData( 12, null, typeof(CmdListImport),                  "List", "Imp")],
+        [new TestData( 13, "Ambiguous command",                  null,   "L", "I")],
+        [new TestData( 14, null, typeof(CmdCleanup),                     "Cleanup")],
     ];
 
 

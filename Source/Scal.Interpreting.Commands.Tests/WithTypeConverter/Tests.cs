@@ -11,10 +11,10 @@ public class Tests(ITestOutputHelper output)
     static Reference ExpectedReference = new Reference("abc", "def");
 
     public static IEnumerable<object[]> GetTestData() => [
-        [new TestData(null, typeof(AddReference),                   "Add", "Reference", "Ref=abc-def")],
-        [new TestData("Ref field is required",              null,   "Add", "Reference")],
-        [new TestData(null, typeof(AddReference),                   "A",    "R",        "-R=abc-def")],
-        [new TestData("Reference not well formed",          null,   "Add", "Reference", "Ref=abc-def-ghi")],
+        [new TestData(  1, null, typeof(AddReference),                   "Add", "Reference", "Ref=abc-def")],
+        [new TestData(  2, "Ref field is required",              null,   "Add", "Reference")],
+        [new TestData(  3, null, typeof(AddReference),                   "A",    "R",        "-R=abc-def")],
+        [new TestData(  4, "Reference not well formed",          null,   "Add", "Reference", "Ref=abc-def-ghi")],
     ];
 
 
