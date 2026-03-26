@@ -8,7 +8,7 @@ A lightweight, deterministic command-line interpreter for DotNet with attribute-
 [![](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml/badge.svg)](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml)
 ![Verified](https://img.shields.io/badge/verified%20with-dotnet%208%20%7C%2010-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)
-![NuGet](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)
+[![NuGet](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)](https://www.nuget.org/packages/Scal.Interpreting.Commands)
 
 Last verified with DotNet 10 (2026) <!-- verified-marker -->
 
