@@ -1,0 +1,45 @@
+name: build & test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 1 1 *' # once a year (Jan 1st)
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - 'ReadMe.md'
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    if: >
+      github.actor != 'github-actions[bot]' &&
+      !contains(github.event.head_commit.message, ' bot:')
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v5
+
+    - uses: actions/setup-dotnet@v5
+      with:
+        dotnet-version: '10.0.x'
+
+    - run: dotnet build --configuration Release
+    - run: dotnet test --configuration Release
+
+    - name: Update ReadMe year
+      run: |
+        YEAR=$(date +%Y)
+        sed -i "s/(20[0-9][0-9]) <!-- verified-marker -->/($YEAR) <!-- verified-marker -->/" ReadMe.md
+
+    - name: Commit if changed
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add ReadMe.md
+        git diff --cached --quiet || git commit -m "Maintenance bot: update test year to $YEAR"
+        git push
