@@ -9,6 +9,7 @@ A lightweight, deterministic command-line interpreter for DotNet with attribute-
 ![Verified](https://img.shields.io/badge/verified%20with-dotnet%208%20%7C%2010-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)
 [![NuGet](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)](https://www.nuget.org/packages/Scal.Interpreting.Commands)
+[![semver](https://img.shields.io/badge/semver-2.0.0-blue)](https://semver.org/)
 
 Last verified with DotNet 10 (2026) <!-- verified-marker -->
 
