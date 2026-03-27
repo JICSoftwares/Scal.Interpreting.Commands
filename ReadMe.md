@@ -1,15 +1,15 @@
-# Scal.Interpreting.Commands
+# <img src="https://raw.githubusercontent.com/Scal-Human/Scal.Interpreting.Commands/refs/heads/main/Source/Scal.Interpreting.Commands/Package.png" width="24" /> Scal.Interpreting.Commands
 
 A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation, type conversion and response file.
 
 ## Status
 
-![Status](https://img.shields.io/badge/status-stable-brightgreen)
-[![](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml/badge.svg)](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml)
-![Verified](https://img.shields.io/badge/verified%20with-dotnet%208%20%7C%2010-blue)
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)
-[![NuGet](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)](https://www.nuget.org/packages/Scal.Interpreting.Commands)
-[![semver](https://img.shields.io/badge/semver-2.0.0-blue)](https://semver.org/)
+[![ ](https://img.shields.io/badge/status-stable-brightgreen)](https://github.com/JICSoftwares)
+[![ ](https://img.shields.io/badge/dotnet-8%20%7C%2010-blue)](https://github.com/JICSoftwares)
+[![ ](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)](https://github.com/JICSoftwares)
+[![ ](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml/badge.svg)](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml)
+[![ ](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)](https://www.nuget.org/packages/Scal.Interpreting.Commands)
+[![ ](https://img.shields.io/badge/semver-2.0.0-blue)](https://semver.org/)
 
 Last verified with DotNet 10 (2026) <!-- verified-marker -->
 
