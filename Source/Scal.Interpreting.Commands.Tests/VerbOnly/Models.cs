@@ -1,9 +1,12 @@
 using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.Serialization;
 
 namespace Scal.Interpreting.Commands.Tests.VerbOnly;
 
+[DataContract(Name = "VerbOnly")]
+[Description("Test verb-only commands")]
 internal abstract class Program
 {
     internal abstract void Execute();

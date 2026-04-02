@@ -32,4 +32,16 @@ public class Tests(ITestOutputHelper output)
         Assert.Equal(what, doMoreCommand.What);
     }
 
+    [Fact]
+    public void HelpShouldContainVersion()
+    {
+        var interpreter     = new CommandLineInterpreter();
+        var interpretation  = interpreter.Interpret<Program>([]);
+        interpretation.Feedback(this._output.WriteLine);
+        List<string> feedback = [];
+        interpretation.Feedback(feedback.Add);
+        Assert.NotEmpty(feedback);
+        Assert.Contains(feedback, msg => msg.Contains("0.0.1"));
+    }
+
 }

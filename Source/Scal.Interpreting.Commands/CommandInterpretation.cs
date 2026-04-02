@@ -74,7 +74,9 @@ public class CommandInterpretation<TCommand>()
         var contract    = attributes.OfType<DataContractAttribute>().FirstOrDefault();
         var description = attributes.OfType<DescriptionAttribute>().FirstOrDefault();
         if ((contract is not null) || (description is not null)) {
-            feedbackAction($"{contract?.Name} {description?.Description}");
+            var version     = typeof(TCommand).Assembly.GetName().Version;
+            var versionText = (version is null) ? null : (version.Revision > 0) ? version.ToString(4) : version.ToString(3);
+            feedbackAction($"{contract?.Name} {versionText} {description?.Description}");
         }
         foreach (var result in this.Results) {
             feedbackAction($"*** {string.Join(", ", result.MemberNames)}: {result.ErrorMessage}");
