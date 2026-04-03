@@ -4,7 +4,7 @@
           Condition="'$(PackageReleaseNotesFile)' != ''">
     <PropertyGroup>
       <!-- <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\..\..\$(PackageReleaseNotesFile)"))</PackageReleaseNotes> -->
-      <PackageReleaseNotes>See [ChangeLog](https://github.com/Scal-Human/Scal.Interpreting.Commands/blob/main/ChangeLog.md)</PackageReleaseNotes>
+      <PackageReleaseNotes>See https://github.com/$(Organization)/$(MSBuildProjectName)/blob/main/ChangeLog.md</PackageReleaseNotes>
     </PropertyGroup>
   </Target>
 

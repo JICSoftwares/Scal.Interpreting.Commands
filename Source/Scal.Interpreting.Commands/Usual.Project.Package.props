@@ -13,13 +13,14 @@
     <PackageId                      >$(MSBuildProjectName)</PackageId>
     <PackageVersion                 >$(Version)</PackageVersion>
     <Authors                        >Scal-Human</Authors>
-    <AuthorAlias                    >JIC Softwares</AuthorAlias>
+    <Company                        >JIC Softwares</Company>
+    <Organization                   >$(Company.Replace(' ', ''))</Organization>
     <ProjectUpdate                  >$([System.DateTime]::Now.ToString(`yyyy`))</ProjectUpdate>
     <ProjectLifetime                Condition="'$(ProjectCreation)' == '$(ProjectUpdate)'">$(ProjectUpdate)</ProjectLifetime>
     <ProjectLifetime                Condition="'$(ProjectCreation)' != '$(ProjectUpdate)'">$(ProjectCreation)-$(ProjectUpdate)</ProjectLifetime>
-    <Copyright                      >(c) $(ProjectLifetime) $(Authors) - $(AuthorAlias)</Copyright>
-    <PackageProjectUrl              >https://github.com/$(Authors)/$(MSBuildProjectName)</PackageProjectUrl>
-    <RepositoryUrl                  >https://github.com/$(Authors)/$(MSBuildProjectName).git</RepositoryUrl>
+    <Copyright                      >(c) $(ProjectLifetime) $(Authors) - $(Company)</Copyright>
+    <PackageProjectUrl              >https://github.com/$(Organization)/$(MSBuildProjectName)</PackageProjectUrl>
+    <RepositoryUrl                  >https://github.com/$(Organization)/$(MSBuildProjectName).git</RepositoryUrl>
     <RepositoryType                 >git</RepositoryType>
     <PackageReadmeFile              >ReadMe.md</PackageReadmeFile>
     <PackageReleaseNotesFile        >ChangeLog.md</PackageReleaseNotesFile>

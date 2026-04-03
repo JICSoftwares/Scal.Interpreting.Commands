@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Scal-Human/Scal.Interpreting.Commands/refs/heads/main/Source/Scal.Interpreting.Commands/Package.png" width="24" /> Scal.Interpreting.Commands
+# <img src="https://raw.githubusercontent.com/JICSoftwares/Scal.Interpreting.Commands/refs/heads/main/Source/Scal.Interpreting.Commands/Package.png" width="24" /> Scal.Interpreting.Commands
 
 A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation, type conversion and response file.
 
@@ -7,7 +7,7 @@ A lightweight, deterministic command-line interpreter for DotNet with attribute-
 [![ ](https://img.shields.io/badge/status-stable-brightgreen)](https://github.com/JICSoftwares)
 [![ ](https://img.shields.io/badge/dotnet-8%20%7C%2010-blue)](https://github.com/JICSoftwares)
 [![ ](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)](https://github.com/JICSoftwares)
-[![ ](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml/badge.svg)](https://github.com/Scal-Human/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml)
+[![ ](https://github.com/JICSoftwares/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml/badge.svg)](https://github.com/JICSoftwares/Scal.Interpreting.Commands/actions/workflows/Build-Test.yml)
 [![ ](https://img.shields.io/nuget/v/Scal.Interpreting.Commands)](https://www.nuget.org/packages/Scal.Interpreting.Commands)
 [![ ](https://img.shields.io/badge/semver-2.0.0-blue)](https://semver.org/)
 
@@ -59,7 +59,7 @@ See [Why Scal.Interpreting.Commands exists](Documentation/Why.md) for more infor
 
 ### Syntax
 
-![CommandLine-ebnf](https://raw.githubusercontent.com/Scal-Human/Scal.Interpreting.Commands/refs/heads/main/Documentation/CommandLine-ebnf.svg)
+![CommandLine-ebnf](https://raw.githubusercontent.com/JICSoftwares/Scal.Interpreting.Commands/refs/heads/main/Documentation/CommandLine-ebnf.svg)
 
 ### Annotated example
 
@@ -350,7 +350,7 @@ If no factory delegate is provided, Activator is used:
 
 ### Test examples
 
-To view examples, see the [tests models](https://github.com/Scal-Human/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation, verb-only, with type converter and with response file.
+To view examples, see the [tests models](https://github.com/JICSoftwares/Scal.Interpreting.Commands/tree/main/Source/Scal.Interpreting.Commands.Tests): by convention, by annotation, verb-only, with type converter and with response file.
 
 ## Integration
 
