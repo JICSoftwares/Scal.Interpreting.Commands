@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/JICSoftwares/Scal.Interpreting.Commands/refs/heads/main/Source/Scal.Interpreting.Commands/Package.png" width="24" /> Scal.Interpreting.Commands
+# ![ ](https://raw.githubusercontent.com/JICSoftwares/Scal.Interpreting.Commands/refs/heads/main/Source/Scal.Interpreting.Commands/Package24.png) Scal.Interpreting.Commands
 
 A lightweight, deterministic command-line interpreter for DotNet with attribute-based validation, type conversion and response file.
 
