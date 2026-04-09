@@ -38,6 +38,7 @@ jobs:
         sed -i "s/(20[0-9][0-9]) <!-- verified-marker -->/($YEAR) <!-- verified-marker -->/" ReadMe.md
 
     - name: Commit if changed
+      if: github.ref_type == 'branch'
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
