@@ -15,7 +15,8 @@ public class Tests(ITestOutputHelper output)
         [new TestDataWithName(  2, "TypeId must be between 1 and 9",     null, null, 0,  "@ParametersListImageKOOneLine.rsp")],
         [new TestDataWithName(  3, null, typeof(ListImageByType),        "a b c", 1,     "@ParametersListImageOKMultiLines.rsp")],
         [new TestDataWithName(  4, null, typeof(ListImageByType),        "a b c", 1,     "@ParametersListImageOKOneLine.rsp")],
-        [new TestDataWithName(  5, null, typeof(ListImageByType),        "a b c", 1,     "@ParametersListImageOKMultiFiles.rsp")]
+        [new TestDataWithName(  5, null, typeof(ListImageByType),        "a b c", 1,     "@ParametersListImageOKMultiFiles.rsp")],
+        [new TestDataWithName(  6, null, typeof(ListImageByType),        "a b c", 1,     "@ParametersListImageOKWithComments.rsp")]
     ];
 
 
