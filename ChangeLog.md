@@ -1,5 +1,20 @@
 # Change Log
 
+<a name="1.2.0"></a>
+## [1.2.0](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/releases/tag/v1.2.0) (2026-04-09)
+
+### Features
+
+* Comments in response files (# prefixed) ([36ee143](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/commit/36ee143c0cd6f2d1bbc5239034a3f523c578a0b9))
+
+### Small Changes
+
+* Add assembly version in help text ([3d95dcd](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/commit/3d95dcda15294756ab9c04f6264414642a3e468b))
+
+### Tests Changes
+
+* Add test Id to ease reporting ([2cf3ad2](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/commit/2cf3ad2885cc331fff3c8eb9caee92c1d64d1dab))
+
 <a name="1.1.0"></a>
 ## [1.1.0](https://www.github.com/Scal-Human/Scal.Interpreting.Commands/releases/tag/v1.1.0) (2026-03-24)
 
