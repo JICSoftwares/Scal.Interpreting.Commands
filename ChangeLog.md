@@ -1,5 +1,12 @@
 # Change Log
 
+<a name="1.2.1"></a>
+## [1.2.1](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/releases/tag/v1.2.1) (2026-04-09)
+
+### Small Changes
+
+* NuGet is unable to show an icon correctly in the ReadMe heading, just remove it ([fe7cfb1](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/commit/fe7cfb1fa3a732a588775b679c9bec8a4e58dad8))
+
 <a name="1.2.0"></a>
 ## [1.2.0](https://www.github.com/JICSoftwares/Scal.Interpreting.Commands/releases/tag/v1.2.0) (2026-04-09)
 
