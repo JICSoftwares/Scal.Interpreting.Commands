@@ -53,7 +53,7 @@ See [Why Scal.Interpreting.Commands exists](Documentation/Why.md) for more infor
 - Dependency-free
 - DI-agnostic construction
 - DotNet 8.0 and 10.0 LTS compatible (console or AspNet)
-- Lightweight (total 464 lines including comments, 4 classes and 2 extensions)
+- Lightweight (total 470 lines including comments, 4 classes and 2 extensions)
 
 ## Usage
 
@@ -313,6 +313,7 @@ CliArgs.exe @"/path with spaces/MyParameters.rsp"
 with MyParameters.rsp containing:
 
 ```
+# Comment in response file
 List Image Name=abc TypeId=1
 ```
 

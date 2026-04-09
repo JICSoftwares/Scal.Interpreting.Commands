@@ -38,7 +38,11 @@ public partial class CommandLineInterpreter(
     public const char ResponseFileMarker = '@';
 
     private const string ArgumentPattern = """ ( ((?<Arg>(\@)?\"[^\"]+\")) | (?<Arg>(\@)?[^\s\"]+) ) """;
-    private const string ResponseFileLinePattern = "(?x) ^" + ArgumentPattern + @"( \s" + ArgumentPattern + ")* $";
+    private const string ResponseFileLinePattern = @"(?x) ^\s*" + ArgumentPattern + @"( \s" + ArgumentPattern + ")* $";
+
+    /// The expression used to detect comments in response file line.
+    [GeneratedRegex(@"^\s*#")]
+    public static partial Regex ResponseFileCommentExpression();
 
     /// The expression used to parse a response file line.
     [GeneratedRegex(ResponseFileLinePattern)]
@@ -171,7 +175,10 @@ public partial class CommandLineInterpreter(
         if (this.ResponseFilePath is null) {
             this.ResponseFilePath = Path.GetDirectoryName(path);
         }
-        foreach (var line in File.ReadLines(path).Where(line => ! string.IsNullOrWhiteSpace(line))) {
+        foreach (var line in File.ReadLines(path).Where(line =>
+            (! string.IsNullOrWhiteSpace(line)) && 
+            (! ResponseFileCommentExpression().IsMatch(line))
+        )) {
             var matches = ResponseFileLineExpression().Matches(line);
             var args = matches
                 .SelectMany(match => match.Groups.Cast<Group>())
