@@ -18,7 +18,7 @@ Over time, they evolve:
 - contextual validation
 - increasing structural complexity
 
-At that point, the command-line is no longer just input parsing — it becomes a **model of intent**.
+At that point, the command-line is no longer just input parsing, it becomes a **model of intent**.
 
 ---
 
