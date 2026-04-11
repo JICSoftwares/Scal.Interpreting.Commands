@@ -12,6 +12,28 @@ This document summarizes feature suggestions and a lightweight impact/effort ana
 
 ---
 
+## Feature suggestions
+
+Based on the current scope (deterministic verb/noun resolution, typed params, DataAnnotations, contextual help, response files), here are concise feature ideas:
+
+- Shell completion generation (Bash/PowerShell/Zsh).
+- Built-in typo suggestions (“Did you mean …?” for verb/noun/param).
+- Command aliases (stable synonyms, not only abbreviations).
+- Default values from environment variables (e.g., APP_REGION).
+- Mutually-exclusive parameter groups (first-class conflict rules).
+- Dry-run / parse-only mode (validate + show bound command without execute).
+- Localization for help/errors (multilingual CLI UX).
+- Pluggable error formatter (plain, JSON, CI-friendly output).
+- Response-file cycle diagnostics (show include chain when depth exceeded).
+- Command discovery export (machine-readable schema/OpenAPI-like for CLIs).
+
+Other possible features (Scal):
+
+- Ignore dashes inside parameters (`--dry-run` with property `DryRun`).
+- Interpretation logging using `EventSource` with specific event Id's.
+
+---
+
 ## Clarification on already-possible behaviors
 
 ### Dry-run
@@ -19,6 +41,12 @@ A practical dry-run mode already exists by calling `Interpret<T>(args)` and inte
 
 ### Error formatting
 Output customization is already possible through `Feedback(Action<string>)`, i.e., caller-controlled formatting/sinks via delegate.
+
+### Mutually-exclusive parameter groups
+
+Your current approach already models exclusivity implicitly by using separate command types, and the tests prove it.
+`ListImageByType` and `ListImageByNamespace` are selected based on differing parameter sets under same verb/noun.\
+But see **Parameter relationship rules** below.
 
 ---
 
@@ -65,6 +93,20 @@ Output customization is already possible through `Feedback(Action<string>)`, i.e
    - **Impact:** High for complex command surfaces and correctness.
    - **Effort:** High (new validation abstractions + conflict reporting UX).
    - **Rationale:** Strong alignment with model-first design intent.
+
+   What I had in mind was a different layer: explicit XOR rules **inside one command model**, e.g.:
+   - `RequireExactlyOneOf(TypeId, Namespace)`
+   - `ForbidTogether(Name, Regex)`
+   - `RequireAtLeastOneOf(File, Stdin)`
+   
+   So the value is:
+   - fewer “mirror” command classes when behavior is same,
+   - clearer validation message (“TypeId and Namespace are mutually exclusive”),
+   - declarative business rules beyond just command discrimination.
+
+   So: your mechanism = `type-level exclusivity` (already strong).
+   
+   Suggested addition = `rule-level exclusivity` (complements it).
 
 ---
 
