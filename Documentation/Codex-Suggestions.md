@@ -31,6 +31,12 @@ Other possible features (Scal):
 
 - Ignore dashes inside parameters (`--dry-run` with property `DryRun`).
 - Interpretation logging using `EventSource` with specific event Id's.
+- Multiple commands (batch interpreter) with context.
+- Allow commands discovery in specific assemblies other than the one of the base class.
+- Command, verb and parameters minimum length with grobal default (currently 1).
+- Preprocessing for parameters required before command instantiation with DI.
+- Help for enum-based parameters.
+- Array parameters (can currently be achived with adhoc property parsing).
 
 ---
 
